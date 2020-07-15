@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/textNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="34sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/textResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Press ● to judge"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textNumber" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideButtonV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideButtonV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideButtonV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideButtonV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideButtonH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.58" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideButtonH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.685" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideButtonH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.79" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideButtonH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.895" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideButtonH5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.825" />
+
+    <Button
+            android:id="@+id/buttonMult"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="×"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH4" />
+
+    <Button
+            android:id="@+id/buttonPow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="^"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV2"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH4" />
+
+    <Button
+            android:id="@+id/button0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV2"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV1"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH4" />
+
+    <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH2"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH1" />
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="2"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH2"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV2"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV1"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH1" />
+
+    <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="3"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH2"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV3"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV2"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH1" />
+
+    <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="4"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH3"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH2" />
+
+    <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="5"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH3"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV2"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV1"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH2" />
+
+    <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="6"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH3"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV2"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH2" />
+
+    <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="7"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH4"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH3" />
+
+    <Button
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="8"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH4"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV2"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV1"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH3" />
+
+    <Button
+            android:id="@+id/button9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonBlack"
+            android:text="9"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH4"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV2"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH3" />
+
+    <Button
+            android:id="@+id/button10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonGrey"
+            android:text="T"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH2"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV4"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV3"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH1" />
+
+    <Button
+            android:id="@+id/button11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonGrey"
+            android:text="J"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH3"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV3"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH2" />
+
+    <Button
+            android:id="@+id/button12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonGrey"
+            android:text="Q"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH4"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV3"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH3" />
+
+    <Button
+            android:id="@+id/button13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonGrey"
+            android:text="K"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideButtonV4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV3"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH4" />
+
+    <Button
+            android:id="@+id/buttonX"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonGrey"
+            android:text="X"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV4"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH1" />
+
+    <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonRed"
+            android:text="◀︎"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV4"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH2" />
+
+    <Button
+            android:id="@+id/buttonJudge"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/buttonRed"
+            android:text="●︎"
+            android:textColor="@android:color/white"
+            android:textSize="33sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideButtonV4"
+            app:layout_constraintTop_toTopOf="@+id/guideButtonH5" />
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideButtonH1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textResult">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/textHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:breakStrategy="simple"
+                    android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
